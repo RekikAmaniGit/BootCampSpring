@@ -16,6 +16,7 @@ public class CampSpring1Application {
 	public static void main(String[] args) throws IOException {
 		//new File(ArticleController.uploadDirectory).mkdir();
 		Path path = Paths.get(ArticleController.uploadDirectory);
+		System.out.print("Instruction 1");
 		try {
 		 if (!Files.exists(path))
 			 Files.createDirectory(path);
